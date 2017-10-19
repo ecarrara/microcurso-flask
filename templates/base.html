@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <title>ETEC Python 2017</title>
+  <style type="text/css">
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  .nav {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+  }
+
+  .nav a {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: #46a;
+  }
+
+  .conteudo {
+    padding: 10px;
+  }
+
+  .conteudo .post {
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .conteudo .post h4 {
+    margin-bottom: 5px;
+    margin-top: 2px;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="nav">
+    <a href="/">Home</a>
+    <a href="/novo">Novo Post</a>
+  </div>
+
+  <div class="conteudo">
+    {% block conteudo %}
+    {% endblock %}
+  </div>
+
+</body>
+</html>

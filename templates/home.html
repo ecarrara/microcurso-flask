@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+  <h2>Posts</h2>
+  {% for post in posts %}
+    <div class="post">
+      <h4><a href="/ver/{{ loop.index0 }}">{{ post.titulo }}</a></h4>
+      <div>
+        {{ post.conteudo }}
+      </div>
+    </div>
+  {% endfor %}
+{% endblock %}

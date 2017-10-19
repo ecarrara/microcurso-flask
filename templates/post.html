@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+  <h2>{{ post.titulo }}</h2>
+  <div>
+    {{ post.conteudo }}
+  </div>
+
+  <form method="post" action="/excluir/{{ pos }}">
+      <button type="submit">Excluír</button>
+  </form>
+{% endblock %}
